@@ -25,9 +25,9 @@ class App < Sinatra::Base
     erb :index
   end
 
-  get "/stylesheets/*.css" do |path|
+  get "/stylesheets/zurb.css" do
     content_type "text/css", charset: "utf-8"
-    scss :"zurb/#{path}"
+    scss "zurb/zurb".to_sym
   end
 end
 
