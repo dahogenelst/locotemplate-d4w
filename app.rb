@@ -27,7 +27,7 @@ class App < Sinatra::Base
 
   get "/stylesheets/*.css" do |path|
     content_type "text/css", charset: "utf-8"
-    scss :"scss/#{path}"
+    scss :"zurb/#{path}"
   end
 end
 
