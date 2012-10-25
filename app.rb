@@ -6,6 +6,10 @@ require "zurb-foundation"
 class App < Sinatra::Base
   configure :production, :development do
     enable :logging
+    Compass.configuration do |config|
+      config.output_style = :compressed
+    end
+    set :scss, Compass.sass_engine_options
   end
 
   get "/" do
