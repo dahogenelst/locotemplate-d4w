@@ -2,7 +2,7 @@
 
 http_path        = "/"
 css_dir          = "public/stylesheets"
-sass_dir         = "views/scss"
+sass_dir         = "scss/"
 javascripts_dir  = "public/javascripts"
 images_dir       = "public/images"
 fonts_dir        = "public/fonts"

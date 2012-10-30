@@ -8,6 +8,7 @@ group :development do
   gem "rb-fsevent", :require => false
   gem "growl"
   gem "guard"
+  gem "guard-sass"
   gem "guard-compass"
   gem "guard-pow"
   gem "guard-livereload"
