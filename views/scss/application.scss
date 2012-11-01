@@ -1,7 +1,5 @@
 @import "compass";
-@import "foundation";
 @import "settings";
+@import "foundation";
 
-#dinges {
-  height: $tabHeight;
-}
+@import "nav-bar";
