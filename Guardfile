@@ -10,9 +10,5 @@ end
 
 guard 'livereload' do
   watch(%r{views/.+\.(erb|haml|slim)$})
-  watch(%r{public/stylesheets/.+\.css})
-end
-
-guard 'compass', :configuration_file => 'config.rb' do
-  watch(%r{scss/.+\.scss})
+  watch(%r{views/scss/.+\.scss})
 end
