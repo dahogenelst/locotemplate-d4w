@@ -1,0 +1,29 @@
+@include font-face(
+  "PortagoITCTTRegular",
+  font-files(
+    "portagoitc_tt_regular-webfont.svg",
+    "portagoitc_tt_regular-webfont.eot",
+    "portagoitc_tt_regular-webfont.ttf",
+    "portagoitc_tt_regular-webfont.woff"
+  )
+);
+
+@include font-face(
+  "FuturaCondensedMedium",
+  font-files(
+    "futura_condensed_medium-webfont.eot",
+    "futura_condensed_medium-webfont.woff",
+    "futura_condensed_medium-webfont.ttf",
+    "futura_condensed_medium-webfont.svg"
+  )
+);
+
+@mixin portago {
+  font-family: "PortagoITCTTRegular";
+  font-weight: normal;
+}
+
+@mixin futura {
+  font-family: "FuturaCondensedMedium";
+  font-weight: normal;
+}
