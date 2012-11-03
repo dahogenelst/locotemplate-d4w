@@ -8,6 +8,7 @@ class App < Sinatra::Base
     enable :logging
     Compass.configuration do |config|
       config.output_style = :compressed
+      config.fonts_dir = 'fonts/'
     end
     set :scss, Compass.sass_engine_options
   end
