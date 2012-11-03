@@ -16,25 +16,18 @@
 	<!-- Included CSS Files -->
 	<link rel="stylesheet" href="stylesheets/application.css">
 
-	<script src="javascripts/jquery.min.js"></script>
-
-	<!-- IE Fix for HTML5 Tags -->
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+  <script src="javascripts/modernizr.foundation.js"></script>
 
 </head>
 <body>
 
-	<div class="row">
-		<div class="twelve columns">
-			<%= yield %>
-		</div>
-	</div>
+	<%= yield %>
 
-	<script src="javascripts/foundation.min.js"></script>
+  <!-- Included JS Files (Compressed) -->
+  <script src="javascripts/jquery.min.js"></script>
+  <script src="javascripts/foundation.min.js"></script>
 
-  <!-- Application Javascript, safe to override -->
+  <!-- Initialize JS Plugins -->
   <script src="javascripts/app.js"></script>
 </body>
 </html>

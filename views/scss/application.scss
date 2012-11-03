@@ -1,3 +1,43 @@
 @import "compass";
 @import "settings";
 @import "foundation";
+@import "font";
+
+body {
+  background: {
+    image: url('/images/content-bg.jpg');
+  }
+}
+
+.top {
+  height:     50px;
+  background: {
+    image: url('/images/header-baroc.gif');
+    color: $darkBlue;
+  }
+  border: {
+    top: 2px solid $black;
+    bottom: 2px solid $darkBlueHighlight;
+  }
+  h1 {
+    @include portago;
+    color: $darkBlueHighlight;
+    text-shadow: #000 -1px -1px 0;
+    margin: 0;
+  }
+}
+
+header {
+  background: {
+    image: url('/images/header-bg.jpg');
+  }
+  @include box-shadow($black 0 8px 6px -6px);
+  min-height: 248px;
+  .decal {
+    min-height: 248px;
+    background: {
+      image: url('/images/header-decal.jpg');
+      repeat: no-repeat;
+    }
+  }
+}
